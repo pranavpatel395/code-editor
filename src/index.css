@@ -1,0 +1,48 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+.top-pane{
+  background-color: hsl(225, 6%, 25%)
+  
+}
+.pane{
+  /* position: fixed; */
+  height: 50vh;
+  display: flex;
+  width: 100%;
+}
+.Editor-container{
+  flex-grow: 1;
+  display: flex;
+  flex-basis: 0;
+  flex-direction: column;
+  padding: .5rem;
+  height: 47vh;
+}
+.Editor-container.collapse{
+  flex-grow: 0;
+}
+.Editor-container.collapse .CodeMirror-scroll{
+  position: absolute;
+}
+.Editor-title{
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(225, 6%, 13%);
+  color: white;
+  padding: .5rem .5rem .5rem 1rem;
+  border-top-right-radius:.5rem;
+  border-top-left-radius:.5rem ;
+}
+.CodeMirror{
+  height: 100% !important;
+}
+
+.code-mirror-wraper{
+  flex-grow: 1 ;
+  border-bottom-left-radius: .5rem ;
+  border-bottom-right-radius: .5rem ;
+  overflow: hidden ;
+}
