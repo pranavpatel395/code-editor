@@ -50,7 +50,7 @@ function App() {
     <iframe
       srcDoc={srcDoc}
       title='Embedded Content'
-      sandbox="allow-scripts"
+      sandbox="allow-scripts allow-modals"
       frameBorder='0'
       width='100%'
       height='100%'
